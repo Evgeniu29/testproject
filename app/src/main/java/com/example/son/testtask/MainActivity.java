@@ -38,7 +38,6 @@ public class MainActivity extends Activity {
             }
         });
 
-
     }
 
     private class PostAsync extends AsyncTask<String, Void, Void> {

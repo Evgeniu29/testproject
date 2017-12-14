@@ -14,7 +14,6 @@ import java.util.ArrayList;
  * Created by son on 10.12.2017.
  */
 
-
 public class AnotherActivity extends Activity implements ProductAdapter.OnItemClicked {
 
     RecyclerView recyclerView;
@@ -37,7 +36,6 @@ public class AnotherActivity extends Activity implements ProductAdapter.OnItemCl
         productAdapter = new ProductAdapter(this, products);
         recyclerView.setAdapter(productAdapter);
         productAdapter.setOnClick(this);
-
 
     }
 

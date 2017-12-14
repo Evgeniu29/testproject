@@ -26,7 +26,6 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
     public String str;
     static AnotherActivity anotherActivity;
 
-
     private OnItemClicked onClick;
 
     //make interface like this
@@ -62,12 +61,9 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
             public void onClick(View v) {
                 onClick.onItemClick(position);
                 holder.price.setEnabled(true);
-
-
             }
 
         });
-
 
     }
 
@@ -127,14 +123,12 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.MyViewHo
                                                  anotherActivity.db.updateProduct(products.get(getAdapterPosition()));
                                              }
 
-
                                          }
             );
 
         }
 
     }
-
 
     public void setOnClick(OnItemClicked onClick) {
         this.onClick = onClick;
