@@ -43,5 +43,4 @@ public class AnotherActivity extends Activity implements ProductAdapter.OnItemCl
     public void onItemClick(int position) {
     }
 
-
 }
